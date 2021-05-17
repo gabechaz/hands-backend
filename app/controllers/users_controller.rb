@@ -11,7 +11,7 @@ end
 private
 
 def new_user_params
-    params.require(:user).permit(:username, :password, :age)
+    params.permit(:username, :password, :age, :user)
 end
 
 end
