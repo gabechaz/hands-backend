@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(version: 2021_05_08_154938) do
   end
 
   create_table "questions", force: :cascade do |t|
+    t.string "question"
+    t.string "answer1"
+    t.string "answer2"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
