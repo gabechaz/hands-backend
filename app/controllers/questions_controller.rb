@@ -7,7 +7,7 @@ class QuestionsController < ApplicationController
     def show
         render json: Question.find(params[:id])
     end
-
+``
     def create
         render json: Question.create(question_params)
     end
@@ -15,7 +15,7 @@ class QuestionsController < ApplicationController
     private
 
     def question_params
-        params.permit(:question, :answer1, :answer2)
+        params.permit(:question, :answer1, :answer2, :user_id)
     end
 
 end
